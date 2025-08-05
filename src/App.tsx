@@ -1,24 +1,61 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import ThematicMap from "./components/ThematicMap";
+import ThematicMenu from "./components/ThematicMenu";
 
 function App() {
+  const [geoData, setGeoData] = useState<any>(null);
+
+  // Menünün kontrol ettiği state'ler
+  const [selectedProperty, setSelectedProperty] = useState("population");
+  const [baseColor, setBaseColor] = useState("#6495ED"); // örnek mavi
+  const [opacity, setOpacity] = useState(80); // %80
+
+  const [availableProperties, setAvailableProperties] = useState<string[]>([]);
+  const [legendItems, setLegendItems] = useState<{ label: string; color: string }[]>([]);
+
+  // GeoJSON verisini yükle
+  useEffect(() => {
+    fetch("/data/export.geojson")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log("GeoJSON data:", data);
+        setGeoData(data);
+
+        // Özellik isimlerini çıkar
+        if (data?.features?.length) {
+          const props = data.features[0].properties;
+          if (props) {
+            setAvailableProperties(Object.keys(props));
+          }
+        }
+      })
+      .catch((err) => console.error("GeoJSON fetch hatası:", err));
+  }, []);
+
+
+
+  if (!geoData) return <div>Loading...</div>;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ThematicMenu
+        properties={availableProperties}
+        selectedProperty={selectedProperty}
+        onPropertyChange={setSelectedProperty}
+        baseColor={baseColor}
+        onBaseColorChange={setBaseColor}
+        opacity={opacity}
+        onOpacityChange={setOpacity}
+        legendItems={legendItems}
+      />
+
+      <ThematicMap
+        rawMapData={geoData}
+        mapParser={(input) => input}
+        dataValueProperty={selectedProperty}
+        opacity={opacity / 100} // opaklık 0-1 aralığına çevir
+        baseColor={baseColor}
+      />
     </div>
   );
 }
