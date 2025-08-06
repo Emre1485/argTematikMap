@@ -29,7 +29,7 @@ export function createThematicLayer({
 
     const vectorLayer = new VectorLayer({
         source: vectorSource,
-        // opacity burada tüm katman için, biz renk içinde opaklık da ekliyoruz
+        opacity,
         style: (feature) => {
             let valRaw;
             if (data.length && matchFunction) {
@@ -41,14 +41,7 @@ export function createThematicLayer({
                 valRaw = feature.get(dataValueProperty);
             }
             const valNum = Number(valRaw);
-            let fillColor = getColor(valNum);
-
-            // Opaklığı renk kanalına ekle
-            try {
-                fillColor = chroma(fillColor).alpha(opacity).css(); // rgba(r,g,b,a)
-            } catch {
-                // hata olursa (örneğin geçersiz renk) fillColor aynen kalır
-            }
+            const fillColor = getColor(valRaw);
 
             return new Style({
                 fill: new Fill({ color: fillColor }),
@@ -59,3 +52,4 @@ export function createThematicLayer({
 
     return vectorLayer;
 }
+

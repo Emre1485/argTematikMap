@@ -4,24 +4,14 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/1667099",
-        "admin_level": "6",
-        "boundary": "administrative",
         "name": "Akyurt",
-        "name:ce": "Акйурт",
-        "name:fa": "اکیورت",
-        "name:tr": "Akyurt",
-        "name:tr:suffix": "İlçesi",
-        "name:tt": "Акъюрт",
-        "name:ur": "اکیورت",
-        "name:zh": "阿庫爾特",
-        "network": "TR06-districts",
         "population": "43918",
-        "population:date": "2024-01-01",
-        "source:population": "TUİK",
-        "type": "boundary",
-        "wikidata": "Q557607",
-        "wikipedia": "tr:Akyurt"
+        "university": true,
+        "safety": "medium",
+        "average_age": 45,
+        "erkek_nufus": "19711",
+        "kadin_nufus": "18877",
+        "has_population_data": true
       },
       "geometry": {
         "type": "Polygon",
@@ -5259,23 +5249,14 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/1667201",
-        "admin_level": "6",
-        "boundary": "administrative",
         "name": "Çubuk",
-        "name:ce": "Чубук",
-        "name:fa": "چوبوک",
-        "name:tr": "Çubuk",
-        "name:tr:suffix": "İlçesi",
-        "name:tt": "Чубук",
-        "name:ur": "چوبوک",
-        "network": "TR06-districts",
         "population": "99096",
-        "population:date": "2024-01-01",
-        "source:population": "TUİK",
-        "type": "boundary",
-        "wikidata": "Q2868524",
-        "wikipedia": "tr:Çubuk, Ankara"
+        "university": true,
+        "safety": "high",
+        "average_age": 53,
+        "erkek_nufus": "45626",
+        "kadin_nufus": "45737",
+        "has_population_data": true
       },
       "geometry": {
         "type": "Polygon",
@@ -14937,25 +14918,14 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/1710801",
-        "admin_level": "6",
-        "boundary": "administrative",
         "name": "Ayaş",
-        "name:ce": "Айаш",
-        "name:fa": "عایاش",
-        "name:ru": "Аяш",
-        "name:tr": "Ayaş",
-        "name:tr:suffix": "İlçesi",
-        "name:tt": "Аяш",
-        "name:ur": "عیاش",
-        "name:zh": "阿亚什",
-        "network": "TR06-districts",
         "population": "15581",
-        "population:date": "2024-01-01",
-        "source:population": "TUİK",
-        "type": "boundary",
-        "wikidata": "Q631170",
-        "wikipedia": "tr:Ayaş"
+        "university": true,
+        "safety": "medium",
+        "average_age": 39,
+        "erkek_nufus": "7032",
+        "kadin_nufus": "6061",
+        "has_population_data": true
       },
       "geometry": {
         "type": "Polygon",
@@ -21737,27 +21707,14 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/1713914",
-        "admin_level": "6",
-        "boundary": "administrative",
         "name": "Evren",
-        "name:ce": "Эврен",
-        "name:de": "Evren",
-        "name:en": "Evren",
-        "name:fa": "اورن",
-        "name:ru": "Эврен",
-        "name:tr": "Evren",
-        "name:tr:suffix": "İlçesi",
-        "name:tt": "Эврен",
-        "name:ur": "عورین",
-        "network": "TR06-districts",
-        "old_name": "Çıkınağıl",
         "population": "3581",
-        "population:date": "2024-01-01",
-        "source:population": "TUİK",
-        "type": "boundary",
-        "wikidata": "Q1027593",
-        "wikipedia": "tr:Evren, Ankara"
+        "university": false,
+        "safety": "medium",
+        "average_age": 39,
+        "erkek_nufus": "1464",
+        "kadin_nufus": "1501",
+        "has_population_data": true
       },
       "geometry": {
         "type": "Polygon",
@@ -24075,23 +24032,12 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/1713916",
-        "admin_level": "6",
-        "boundary": "administrative",
         "name": "Şereflikoçhisar",
-        "name:de": "Şereflikoçhisar",
-        "name:en": "Şereflikoçhisar",
-        "name:tr": "Şereflikoçhisar",
-        "name:tr:suffix": "İlçesi",
-        "name:zh": "謝雷夫利科奇希薩爾",
-        "network": "TR06-districts",
-        "old_name": "Koçhisar",
         "population": "34122",
-        "population:date": "2024-01-01",
-        "source:population": "TUİK",
-        "type": "boundary",
-        "wikidata": "Q388999",
-        "wikipedia": "tr:Şereflikoçhisar"
+        "university": true,
+        "safety": "medium",
+        "average_age": 43,
+        "has_population_data": false
       },
       "geometry": {
         "type": "Polygon",
@@ -29221,27 +29167,14 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/1738278",
-        "admin_level": "6",
-        "boundary": "administrative",
         "name": "Beypazarı",
-        "name:ce": "Бейпазари",
-        "name:de": "Beypazarı",
-        "name:en": "Beypazarı",
-        "name:fa": "بی‌پازاری",
-        "name:ko": "베이파자르",
-        "name:tr": "Beypazarı",
-        "name:tr:suffix": "İlçesi",
-        "name:tt": "Бейпазары",
-        "name:ur": "بےپازاری",
-        "name:zh": "貝伊帕扎勒",
-        "network": "TR06-districts",
         "population": "48558",
-        "population:date": "2024-01-01",
-        "source:population": "TUİK",
-        "type": "boundary",
-        "wikidata": "Q794382",
-        "wikipedia": "tr:Beypazarı"
+        "university": true,
+        "safety": "medium",
+        "average_age": 41,
+        "erkek_nufus": "24119",
+        "kadin_nufus": "24274",
+        "has_population_data": true
       },
       "geometry": {
         "type": "Polygon",
@@ -35383,27 +35316,14 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/1738279",
-        "admin_level": "6",
-        "boundary": "administrative",
         "name": "Nallıhan",
-        "name:ce": "НаллихӀан",
-        "name:de": "Nallıhan",
-        "name:en": "Nallıhan",
-        "name:fa": "ناللی‌حان",
-        "name:tr": "Nallıhan",
-        "name:tr:suffix": "İlçesi",
-        "name:tt": "Наллыхан",
-        "name:ur": "نالیحان",
-        "name:zh": "納勒漢",
-        "network": "TR06-districts",
-        "old_name": "Karahisar-ı Nallı",
         "population": "26831",
-        "population:date": "2024-01-01",
-        "source:population": "TUİK",
-        "type": "boundary",
-        "wikidata": "Q1947523",
-        "wikipedia": "tr:Nallıhan"
+        "university": false,
+        "safety": "high",
+        "average_age": 48,
+        "erkek_nufus": "13422",
+        "kadin_nufus": "13539",
+        "has_population_data": true
       },
       "geometry": {
         "type": "Polygon",
@@ -38825,26 +38745,14 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/1739269",
-        "admin_level": "6",
-        "boundary": "administrative",
         "name": "Güdül",
-        "name:ce": "Гуьдуьл",
-        "name:de": "Güdül",
-        "name:en": "Güdül",
-        "name:fa": "گودول",
-        "name:tr": "Güdül",
-        "name:tr:suffix": "İlçesi",
-        "name:tt": "Гүдүл",
-        "name:uk": "Ґюдюль",
-        "name:ur": "گودول",
-        "network": "TR06-districts",
         "population": "10014",
-        "population:date": "2024-01-01",
-        "source:population": "TUİK",
-        "type": "boundary",
-        "wikidata": "Q2672756",
-        "wikipedia": "tr:Güdül"
+        "university": false,
+        "safety": "high",
+        "average_age": 57,
+        "erkek_nufus": "4107",
+        "kadin_nufus": "4048",
+        "has_population_data": true
       },
       "geometry": {
         "type": "Polygon",
@@ -43114,30 +43022,14 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/1799855",
-        "admin_level": "6",
-        "boundary": "administrative",
         "name": "Polatlı",
-        "name:ar": "بولادلي",
-        "name:ce": "Полатли",
-        "name:de": "Polatlı",
-        "name:el": "Πόλατλι",
-        "name:en": "Polatlı",
-        "name:fa": "پولاتلی",
-        "name:ku": "Polatlî",
-        "name:sr": "Полатли",
-        "name:tr": "Polatlı",
-        "name:tr:suffix": "İlçesi",
-        "name:tt": "Полатлы",
-        "name:ur": "پولاتلی",
-        "name:zh": "波拉特勒",
-        "network": "TR06-districts",
         "population": "128895",
-        "population:date": "2024-01-01",
-        "source:population": "TUİK",
-        "type": "boundary",
-        "wikidata": "Q945388",
-        "wikipedia": "tr:Polatlı"
+        "university": true,
+        "safety": "medium",
+        "average_age": 42,
+        "erkek_nufus": "63738",
+        "kadin_nufus": "63788",
+        "has_population_data": true
       },
       "geometry": {
         "type": "Polygon",
@@ -49459,26 +49351,14 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/1809464",
-        "admin_level": "6",
-        "boundary": "administrative",
         "name": "Gölbaşı",
-        "name:ar": "غولباشي",
-        "name:ce": "Гоьлбаши",
-        "name:fa": "گل‌باشی",
-        "name:ru": "Гёльбаши",
-        "name:tr": "Gölbaşı",
-        "name:tr:suffix": "İlçesi",
-        "name:tt": "Гөлбашы",
-        "name:ur": "گولباشی",
-        "name:zh": "格爾巴舍",
-        "network": "TR06-districts",
         "population": "157605",
-        "population:date": "2024-01-01",
-        "source:population": "TUİK",
-        "type": "boundary",
-        "wikidata": "Q1020643",
-        "wikipedia": "tr:Gölbaşı, Ankara"
+        "university": false,
+        "safety": "low",
+        "average_age": 30,
+        "erkek_nufus": "71505",
+        "kadin_nufus": "71456",
+        "has_population_data": true
       },
       "geometry": {
         "type": "Polygon",
@@ -55308,19 +55188,12 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/1809594",
-        "admin_level": "6",
-        "boundary": "administrative",
         "name": "Balâ",
-        "name:tr": "Balâ",
-        "name:tr:suffix": "İlçesi",
-        "network": "TR06-districts",
         "population": "28704",
-        "population:date": "2024-01-01",
-        "source:population": "TUİK",
-        "type": "boundary",
-        "wikidata": "Q264105",
-        "wikipedia": "tr:Balâ"
+        "university": false,
+        "safety": "medium",
+        "average_age": 38,
+        "has_population_data": false
       },
       "geometry": {
         "type": "Polygon",
@@ -64802,19 +64675,14 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/1809674",
-        "admin_level": "6",
-        "boundary": "administrative",
         "name": "Elmadağ",
-        "name:tr": "Elmadağ",
-        "name:tr:suffix": "İlçesi",
-        "network": "TR06-districts",
         "population": "45034",
-        "population:date": "2024-01-01",
-        "source:population": "TUİK",
-        "type": "boundary",
-        "wikidata": "Q2671994",
-        "wikipedia": "tr:Elmadağ, Ankara"
+        "university": false,
+        "safety": "low",
+        "average_age": 25,
+        "erkek_nufus": "22223",
+        "kadin_nufus": "22013",
+        "has_population_data": true
       },
       "geometry": {
         "type": "Polygon",
@@ -66652,24 +66520,14 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/1810229",
-        "admin_level": "6",
-        "boundary": "administrative",
         "name": "Haymana",
-        "name:ce": "ХӀаймана",
-        "name:fa": "هیمنه",
-        "name:tr": "Haymana",
-        "name:tr:suffix": "İlçesi",
-        "name:tt": "Хаймана",
-        "name:zh": "哈伊馬納",
-        "network": "TR06-districts",
-        "old_name": "Haymanateyn",
         "population": "33494",
-        "population:date": "2024-01-01",
-        "source:population": "TUİK",
-        "type": "boundary",
-        "wikidata": "Q1020642",
-        "wikipedia": "tr:Haymana"
+        "university": true,
+        "safety": "medium",
+        "average_age": 38,
+        "erkek_nufus": "14228",
+        "kadin_nufus": "13070",
+        "has_population_data": true
       },
       "geometry": {
         "type": "Polygon",
@@ -72355,21 +72213,12 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/1811046",
-        "admin_level": "6",
-        "boundary": "administrative",
         "name": "Sincan",
-        "name:de": "Sincan",
-        "name:en": "Sincan",
-        "name:tr": "Sincan",
-        "name:tr:suffix": "İlçesi",
-        "network": "TR06-districts",
         "population": "571889",
-        "population:date": "2024-01-01",
-        "source:population": "TUİK",
-        "type": "boundary",
-        "wikidata": "Q1020659",
-        "wikipedia": "tr:Sincan"
+        "university": true,
+        "safety": "high",
+        "average_age": 55,
+        "has_population_data": false
       },
       "geometry": {
         "type": "Polygon",
@@ -75767,26 +75616,14 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/1811108",
-        "admin_level": "6",
-        "boundary": "administrative",
         "name": "Çamlıdere",
-        "name:ce": "Чамлидере",
-        "name:de": "Çamlıdere",
-        "name:en": "Çamlıdere",
-        "name:fa": "چاملی‌دره",
-        "name:tr": "Çamlıdere",
-        "name:tr:suffix": "İlçesi",
-        "name:tt": "Чамлыдере",
-        "name:ur": "چاملیدیرے",
-        "name:zh": "恰姆勒代雷",
-        "network": "TR06-districts",
         "population": "13971",
-        "population:date": "2024-01-01",
-        "source:population": "TUİK",
-        "type": "boundary",
-        "wikidata": "Q240979",
-        "wikipedia": "tr:Çamlıdere"
+        "university": false,
+        "safety": "medium",
+        "average_age": 36,
+        "erkek_nufus": "4421",
+        "kadin_nufus": "3929",
+        "has_population_data": true
       },
       "geometry": {
         "type": "Polygon",
@@ -78900,27 +78737,14 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/1811128",
-        "admin_level": "6",
-        "boundary": "administrative",
         "name": "Kızılcahamam",
-        "name:ce": "КизилджахӀамам",
-        "name:de": "Kızılcahamam",
-        "name:en": "Kızılcahamam",
-        "name:fa": "قزلچه‌حمام",
-        "name:tr": "Kızılcahamam",
-        "name:tr:suffix": "İlçesi",
-        "name:tt": "Кызылджахамам",
-        "name:ur": "قزلچہ حمام",
-        "name:zh": "克孜勒賈哈馬姆",
-        "network": "TR06-districts",
-        "old_name": "Yabanabad",
         "population": "31800",
-        "population:date": "2024-01-01",
-        "source:population": "TUİK",
-        "type": "boundary",
-        "wikidata": "Q1020663",
-        "wikipedia": "tr:Kızılcahamam"
+        "university": false,
+        "safety": "low",
+        "average_age": 23,
+        "erkek_nufus": "13745",
+        "kadin_nufus": "13223",
+        "has_population_data": true
       },
       "geometry": {
         "type": "Polygon",
@@ -86210,24 +86034,12 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/1811252",
-        "admin_level": "6",
-        "boundary": "administrative",
         "name": "Kalecik",
-        "name:ce": "Каледжик",
-        "name:fa": "کاله‌جیک",
-        "name:tr": "Kalecik",
-        "name:tr:suffix": "İlçesi",
-        "name:tt": "Калеҗик",
-        "name:ur": "قلعہ جیک",
-        "name:zh": "卡萊吉克",
-        "network": "TR06-districts",
         "population": "13296",
-        "population:date": "2024-01-01",
-        "source:population": "TUİK",
-        "type": "boundary",
-        "wikidata": "Q967071",
-        "wikipedia": "tr:Kalecik"
+        "university": false,
+        "safety": "high",
+        "average_age": 46,
+        "has_population_data": false
       },
       "geometry": {
         "type": "Polygon",
@@ -93973,26 +93785,12 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/1811393",
-        "admin_level": "6",
-        "boundary": "administrative",
         "name": "Keçiören",
-        "name:az": "Keçiörən",
-        "name:ce": "Кечиоьрен",
-        "name:fa": "کچی‌اورن",
-        "name:ko": "케치외렌",
-        "name:tr": "Keçiören",
-        "name:tr:suffix": "İlçesi",
-        "name:tt": "Кечиорен",
-        "name:ur": "کیچیورین",
-        "name:zh": "凱其歐倫市",
-        "network": "TR06-districts",
         "population": "923404",
-        "population:date": "2024-01-01",
-        "source:population": "TUİK",
-        "type": "boundary",
-        "wikidata": "Q1021220",
-        "wikipedia": "tr:Keçiören"
+        "university": true,
+        "safety": "high",
+        "average_age": 56,
+        "has_population_data": false
       },
       "geometry": {
         "type": "Polygon",
@@ -96662,26 +96460,14 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/1811454",
-        "admin_level": "6",
-        "boundary": "administrative",
         "name": "Pursaklar",
-        "name:ce": "Пурсаклар",
-        "name:de": "Pursaklar",
-        "name:en": "Pursaklar",
-        "name:fa": "پورسکلر",
-        "name:tr": "Pursaklar",
-        "name:tr:suffix": "İlçesi",
-        "name:tt": "Пурсаклар",
-        "name:ur": "پورساکلار",
-        "name:zh": "布爾薩克拉爾",
-        "network": "TR06-districts",
         "population": "161926",
-        "population:date": "2024-01-01",
-        "source:population": "TUİK",
-        "type": "boundary",
-        "wikidata": "Q3056514",
-        "wikipedia": "tr:Pursaklar"
+        "university": true,
+        "safety": "medium",
+        "average_age": 37,
+        "erkek_nufus": "79639",
+        "kadin_nufus": "80037",
+        "has_population_data": true
       },
       "geometry": {
         "type": "Polygon",
@@ -99311,25 +99097,14 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/1812317",
-        "admin_level": "6",
-        "boundary": "administrative",
         "name": "Altındağ",
-        "name:ar": "ألتنداغ",
-        "name:ce": "АлтиндагӀ",
-        "name:fa": "آلتینداغ",
-        "name:tr": "Altındağ",
-        "name:tr:suffix": "İlçesi",
-        "name:tt": "Алтындаг",
-        "name:ur": "التینداغ",
-        "name:zh": "阿爾滕達",
-        "network": "TR06-districts",
         "population": "412267",
-        "population:date": "2024-01-01",
-        "source:population": "TUİK",
-        "type": "boundary",
-        "wikidata": "Q682981",
-        "wikipedia": "tr:Altındağ"
+        "university": false,
+        "safety": "low",
+        "average_age": 25,
+        "erkek_nufus": "204907",
+        "kadin_nufus": "202768",
+        "has_population_data": true
       },
       "geometry": {
         "type": "Polygon",
@@ -102079,21 +101854,14 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/1812319",
-        "admin_level": "6",
-        "boundary": "administrative",
         "name": "Mamak",
-        "name:de": "Mamak",
-        "name:en": "Mamak",
-        "name:tr": "Mamak",
-        "name:tr:suffix": "İlçesi",
-        "network": "TR06-districts",
         "population": "682279",
-        "population:date": "2024-01-01",
-        "source:population": "TUİK",
-        "type": "boundary",
-        "wikidata": "Q2055274",
-        "wikipedia": "tr:Mamak"
+        "university": true,
+        "safety": "high",
+        "average_age": 63,
+        "erkek_nufus": "340018",
+        "kadin_nufus": "342402",
+        "has_population_data": true
       },
       "geometry": {
         "type": "Polygon",
@@ -105255,19 +105023,14 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/1812321",
-        "admin_level": "6",
-        "boundary": "administrative",
         "name": "Çankaya",
-        "name:tr": "Çankaya",
-        "name:tr:suffix": "İlçesi",
-        "network": "TR06-districts",
         "population": "937546",
-        "population:date": "2024-01-01",
-        "source:population": "TUİK",
-        "type": "boundary",
-        "wikidata": "Q1020646",
-        "wikipedia": "en:Çankaya, Ankara (district)"
+        "university": true,
+        "safety": "low",
+        "average_age": 24,
+        "erkek_nufus": "454974",
+        "kadin_nufus": "494291",
+        "has_population_data": true
       },
       "geometry": {
         "type": "Polygon",
@@ -111261,19 +111024,12 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/1812354",
-        "admin_level": "6",
-        "boundary": "administrative",
         "name": "Etimesgut",
-        "name:tr": "Etimesgut",
-        "name:tr:suffix": "İlçesi",
-        "network": "TR06-districts",
         "population": "617229",
-        "population:date": "2024-01-01",
-        "source:population": "TUİK",
-        "type": "boundary",
-        "wikidata": "Q1029159",
-        "wikipedia": "tr:Etimesgut"
+        "university": false,
+        "safety": "high",
+        "average_age": 46,
+        "has_population_data": false
       },
       "geometry": {
         "type": "Polygon",
@@ -114743,25 +114499,14 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/1812355",
-        "admin_level": "6",
-        "boundary": "administrative",
         "name": "Kahramankazan",
-        "name:ce": "КахӀраманказан",
-        "name:fa": "کازان",
-        "name:ja": "カフラマンカザン",
-        "name:tr": "Kahramankazan",
-        "name:tr:suffix": "İlçesi",
-        "name:ur": "کازان",
-        "name:zh": "卡拉曼卡贊",
-        "network": "TR06-districts",
-        "old_name": "Kazan",
         "population": "60804",
-        "population:date": "2024-01-01",
-        "source:population": "TUİK",
-        "type": "boundary",
-        "wikidata": "Q2318164",
-        "wikipedia": "tr:Kahramankazan"
+        "university": true,
+        "safety": "high",
+        "average_age": 64,
+        "erkek_nufus": "29658",
+        "kadin_nufus": "28255",
+        "has_population_data": true
       },
       "geometry": {
         "type": "Polygon",
@@ -117935,24 +117680,12 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/1812356",
-        "admin_level": "6",
-        "boundary": "administrative",
         "name": "Yenimahalle",
-        "name:az": "Yeniməhəllə",
-        "name:fa": "ینی‌محله",
-        "name:tr": "Yenimahalle",
-        "name:tr:suffix": "İlçesi",
-        "name:tt": "Енимахалле",
-        "name:ur": "ینی محلہ",
-        "name:zh": "耶尼瑪哈勒",
-        "network": "TR06-districts",
         "population": "701638",
-        "population:date": "2024-01-01",
-        "source:population": "TUİK",
-        "type": "boundary",
-        "wikidata": "Q1865363",
-        "wikipedia": "tr:Yenimahalle"
+        "university": true,
+        "safety": "high",
+        "average_age": 59,
+        "has_population_data": false
       },
       "geometry": {
         "type": "Polygon",
@@ -120394,35 +120127,9 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/27003763",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1811128,
-            "reltags": {
-              "admin_level": "6",
-              "boundary": "administrative",
-              "name": "Kızılcahamam",
-              "name:ce": "КизилджахӀамам",
-              "name:de": "Kızılcahamam",
-              "name:en": "Kızılcahamam",
-              "name:fa": "قزلچه‌حمام",
-              "name:tr": "Kızılcahamam",
-              "name:tr:suffix": "İlçesi",
-              "name:tt": "Кызылджахамам",
-              "name:ur": "قزلچہ حمام",
-              "name:zh": "克孜勒賈哈馬姆",
-              "network": "TR06-districts",
-              "old_name": "Yabanabad",
-              "population": "31800",
-              "population:date": "2024-01-01",
-              "source:population": "TUİK",
-              "type": "boundary",
-              "wikidata": "Q1020663",
-              "wikipedia": "tr:Kızılcahamam"
-            }
-          }
-        ]
+        "university": false,
+        "safety": "low",
+        "average_age": 25
       },
       "geometry": {
         "type": "Point",
@@ -120436,27 +120143,9 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/27031554",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1809674,
-            "reltags": {
-              "admin_level": "6",
-              "boundary": "administrative",
-              "name": "Elmadağ",
-              "name:tr": "Elmadağ",
-              "name:tr:suffix": "İlçesi",
-              "network": "TR06-districts",
-              "population": "45034",
-              "population:date": "2024-01-01",
-              "source:population": "TUİK",
-              "type": "boundary",
-              "wikidata": "Q2671994",
-              "wikipedia": "tr:Elmadağ, Ankara"
-            }
-          }
-        ]
+        "university": false,
+        "safety": "high",
+        "average_age": 48
       },
       "geometry": {
         "type": "Point",
@@ -120470,32 +120159,9 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/29427947",
-        "@relations": [
-          {
-            "role": "label",
-            "rel": 1812356,
-            "reltags": {
-              "admin_level": "6",
-              "boundary": "administrative",
-              "name": "Yenimahalle",
-              "name:az": "Yeniməhəllə",
-              "name:fa": "ینی‌محله",
-              "name:tr": "Yenimahalle",
-              "name:tr:suffix": "İlçesi",
-              "name:tt": "Енимахалле",
-              "name:ur": "ینی محلہ",
-              "name:zh": "耶尼瑪哈勒",
-              "network": "TR06-districts",
-              "population": "701638",
-              "population:date": "2024-01-01",
-              "source:population": "TUİK",
-              "type": "boundary",
-              "wikidata": "Q1865363",
-              "wikipedia": "tr:Yenimahalle"
-            }
-          }
-        ]
+        "university": true,
+        "safety": "low",
+        "average_age": 21
       },
       "geometry": {
         "type": "Point",
@@ -120509,32 +120175,9 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/84326092",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1667099,
-            "reltags": {
-              "admin_level": "6",
-              "boundary": "administrative",
-              "name": "Akyurt",
-              "name:ce": "Акйурт",
-              "name:fa": "اکیورت",
-              "name:tr": "Akyurt",
-              "name:tr:suffix": "İlçesi",
-              "name:tt": "Акъюрт",
-              "name:ur": "اکیورت",
-              "name:zh": "阿庫爾特",
-              "network": "TR06-districts",
-              "population": "43918",
-              "population:date": "2024-01-01",
-              "source:population": "TUİK",
-              "type": "boundary",
-              "wikidata": "Q557607",
-              "wikipedia": "tr:Akyurt"
-            }
-          }
-        ]
+        "university": false,
+        "safety": "low",
+        "average_age": 23
       },
       "geometry": {
         "type": "Point",
@@ -120548,34 +120191,9 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/84361365",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1811454,
-            "reltags": {
-              "admin_level": "6",
-              "boundary": "administrative",
-              "name": "Pursaklar",
-              "name:ce": "Пурсаклар",
-              "name:de": "Pursaklar",
-              "name:en": "Pursaklar",
-              "name:fa": "پورسکلر",
-              "name:tr": "Pursaklar",
-              "name:tr:suffix": "İlçesi",
-              "name:tt": "Пурсаклар",
-              "name:ur": "پورساکلار",
-              "name:zh": "布爾薩克拉爾",
-              "network": "TR06-districts",
-              "population": "161926",
-              "population:date": "2024-01-01",
-              "source:population": "TUİK",
-              "type": "boundary",
-              "wikidata": "Q3056514",
-              "wikipedia": "tr:Pursaklar"
-            }
-          }
-        ]
+        "university": true,
+        "safety": "high",
+        "average_age": 48
       },
       "geometry": {
         "type": "Point",
@@ -120589,27 +120207,9 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/150557132",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1809594,
-            "reltags": {
-              "admin_level": "6",
-              "boundary": "administrative",
-              "name": "Balâ",
-              "name:tr": "Balâ",
-              "name:tr:suffix": "İlçesi",
-              "network": "TR06-districts",
-              "population": "28704",
-              "population:date": "2024-01-01",
-              "source:population": "TUİK",
-              "type": "boundary",
-              "wikidata": "Q264105",
-              "wikipedia": "tr:Balâ"
-            }
-          }
-        ]
+        "university": true,
+        "safety": "high",
+        "average_age": 61
       },
       "geometry": {
         "type": "Point",
@@ -120623,32 +120223,9 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/172994128",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1810229,
-            "reltags": {
-              "admin_level": "6",
-              "boundary": "administrative",
-              "name": "Haymana",
-              "name:ce": "ХӀаймана",
-              "name:fa": "هیمنه",
-              "name:tr": "Haymana",
-              "name:tr:suffix": "İlçesi",
-              "name:tt": "Хаймана",
-              "name:zh": "哈伊馬納",
-              "network": "TR06-districts",
-              "old_name": "Haymanateyn",
-              "population": "33494",
-              "population:date": "2024-01-01",
-              "source:population": "TUİK",
-              "type": "boundary",
-              "wikidata": "Q1020642",
-              "wikipedia": "tr:Haymana"
-            }
-          }
-        ]
+        "university": true,
+        "safety": "medium",
+        "average_age": 38
       },
       "geometry": {
         "type": "Point",
@@ -120662,31 +120239,9 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/173058779",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1713916,
-            "reltags": {
-              "admin_level": "6",
-              "boundary": "administrative",
-              "name": "Şereflikoçhisar",
-              "name:de": "Şereflikoçhisar",
-              "name:en": "Şereflikoçhisar",
-              "name:tr": "Şereflikoçhisar",
-              "name:tr:suffix": "İlçesi",
-              "name:zh": "謝雷夫利科奇希薩爾",
-              "network": "TR06-districts",
-              "old_name": "Koçhisar",
-              "population": "34122",
-              "population:date": "2024-01-01",
-              "source:population": "TUİK",
-              "type": "boundary",
-              "wikidata": "Q388999",
-              "wikipedia": "tr:Şereflikoçhisar"
-            }
-          }
-        ]
+        "university": true,
+        "safety": "medium",
+        "average_age": 42
       },
       "geometry": {
         "type": "Point",
@@ -120700,32 +120255,9 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/173706263",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1811252,
-            "reltags": {
-              "admin_level": "6",
-              "boundary": "administrative",
-              "name": "Kalecik",
-              "name:ce": "Каледжик",
-              "name:fa": "کاله‌جیک",
-              "name:tr": "Kalecik",
-              "name:tr:suffix": "İlçesi",
-              "name:tt": "Калеҗик",
-              "name:ur": "قلعہ جیک",
-              "name:zh": "卡萊吉克",
-              "network": "TR06-districts",
-              "population": "13296",
-              "population:date": "2024-01-01",
-              "source:population": "TUİK",
-              "type": "boundary",
-              "wikidata": "Q967071",
-              "wikipedia": "tr:Kalecik"
-            }
-          }
-        ]
+        "university": false,
+        "safety": "medium",
+        "average_age": 44
       },
       "geometry": {
         "type": "Point",
@@ -120739,35 +120271,9 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/206143870",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1738279,
-            "reltags": {
-              "admin_level": "6",
-              "boundary": "administrative",
-              "name": "Nallıhan",
-              "name:ce": "НаллихӀан",
-              "name:de": "Nallıhan",
-              "name:en": "Nallıhan",
-              "name:fa": "ناللی‌حان",
-              "name:tr": "Nallıhan",
-              "name:tr:suffix": "İlçesi",
-              "name:tt": "Наллыхан",
-              "name:ur": "نالیحان",
-              "name:zh": "納勒漢",
-              "network": "TR06-districts",
-              "old_name": "Karahisar-ı Nallı",
-              "population": "26831",
-              "population:date": "2024-01-01",
-              "source:population": "TUİK",
-              "type": "boundary",
-              "wikidata": "Q1947523",
-              "wikipedia": "tr:Nallıhan"
-            }
-          }
-        ]
+        "university": false,
+        "safety": "low",
+        "average_age": 25
       },
       "geometry": {
         "type": "Point",
@@ -120781,35 +120287,9 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/206150499",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1738278,
-            "reltags": {
-              "admin_level": "6",
-              "boundary": "administrative",
-              "name": "Beypazarı",
-              "name:ce": "Бейпазари",
-              "name:de": "Beypazarı",
-              "name:en": "Beypazarı",
-              "name:fa": "بی‌پازاری",
-              "name:ko": "베이파자르",
-              "name:tr": "Beypazarı",
-              "name:tr:suffix": "İlçesi",
-              "name:tt": "Бейпазары",
-              "name:ur": "بےپازاری",
-              "name:zh": "貝伊帕扎勒",
-              "network": "TR06-districts",
-              "population": "48558",
-              "population:date": "2024-01-01",
-              "source:population": "TUİK",
-              "type": "boundary",
-              "wikidata": "Q794382",
-              "wikipedia": "tr:Beypazarı"
-            }
-          }
-        ]
+        "university": true,
+        "safety": "medium",
+        "average_age": 32
       },
       "geometry": {
         "type": "Point",
@@ -120823,33 +120303,9 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/206151514",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1710801,
-            "reltags": {
-              "admin_level": "6",
-              "boundary": "administrative",
-              "name": "Ayaş",
-              "name:ce": "Айаш",
-              "name:fa": "عایاش",
-              "name:ru": "Аяш",
-              "name:tr": "Ayaş",
-              "name:tr:suffix": "İlçesi",
-              "name:tt": "Аяш",
-              "name:ur": "عیاش",
-              "name:zh": "阿亚什",
-              "network": "TR06-districts",
-              "population": "15581",
-              "population:date": "2024-01-01",
-              "source:population": "TUİK",
-              "type": "boundary",
-              "wikidata": "Q631170",
-              "wikipedia": "tr:Ayaş"
-            }
-          }
-        ]
+        "university": false,
+        "safety": "low",
+        "average_age": 20
       },
       "geometry": {
         "type": "Point",
@@ -120863,34 +120319,9 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/206152620",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1739269,
-            "reltags": {
-              "admin_level": "6",
-              "boundary": "administrative",
-              "name": "Güdül",
-              "name:ce": "Гуьдуьл",
-              "name:de": "Güdül",
-              "name:en": "Güdül",
-              "name:fa": "گودول",
-              "name:tr": "Güdül",
-              "name:tr:suffix": "İlçesi",
-              "name:tt": "Гүдүл",
-              "name:uk": "Ґюдюль",
-              "name:ur": "گودول",
-              "network": "TR06-districts",
-              "population": "10014",
-              "population:date": "2024-01-01",
-              "source:population": "TUİK",
-              "type": "boundary",
-              "wikidata": "Q2672756",
-              "wikipedia": "tr:Güdül"
-            }
-          }
-        ]
+        "university": false,
+        "safety": "medium",
+        "average_age": 32
       },
       "geometry": {
         "type": "Point",
@@ -120904,34 +120335,9 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/206153148",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1811108,
-            "reltags": {
-              "admin_level": "6",
-              "boundary": "administrative",
-              "name": "Çamlıdere",
-              "name:ce": "Чамлидере",
-              "name:de": "Çamlıdere",
-              "name:en": "Çamlıdere",
-              "name:fa": "چاملی‌دره",
-              "name:tr": "Çamlıdere",
-              "name:tr:suffix": "İlçesi",
-              "name:tt": "Чамлыдере",
-              "name:ur": "چاملیدیرے",
-              "name:zh": "恰姆勒代雷",
-              "network": "TR06-districts",
-              "population": "13971",
-              "population:date": "2024-01-01",
-              "source:population": "TUİK",
-              "type": "boundary",
-              "wikidata": "Q240979",
-              "wikipedia": "tr:Çamlıdere"
-            }
-          }
-        ]
+        "university": false,
+        "safety": "low",
+        "average_age": 28
       },
       "geometry": {
         "type": "Point",
@@ -120945,34 +120351,9 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/270059039",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1809464,
-            "reltags": {
-              "admin_level": "6",
-              "boundary": "administrative",
-              "name": "Gölbaşı",
-              "name:ar": "غولباشي",
-              "name:ce": "Гоьлбаши",
-              "name:fa": "گل‌باشی",
-              "name:ru": "Гёльбаши",
-              "name:tr": "Gölbaşı",
-              "name:tr:suffix": "İlçesi",
-              "name:tt": "Гөлбашы",
-              "name:ur": "گولباشی",
-              "name:zh": "格爾巴舍",
-              "network": "TR06-districts",
-              "population": "157605",
-              "population:date": "2024-01-01",
-              "source:population": "TUİK",
-              "type": "boundary",
-              "wikidata": "Q1020643",
-              "wikipedia": "tr:Gölbaşı, Ankara"
-            }
-          }
-        ]
+        "university": false,
+        "safety": "medium",
+        "average_age": 36
       },
       "geometry": {
         "type": "Point",
@@ -120986,31 +120367,9 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/778990623",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1667201,
-            "reltags": {
-              "admin_level": "6",
-              "boundary": "administrative",
-              "name": "Çubuk",
-              "name:ce": "Чубук",
-              "name:fa": "چوبوک",
-              "name:tr": "Çubuk",
-              "name:tr:suffix": "İlçesi",
-              "name:tt": "Чубук",
-              "name:ur": "چوبوک",
-              "network": "TR06-districts",
-              "population": "99096",
-              "population:date": "2024-01-01",
-              "source:population": "TUİK",
-              "type": "boundary",
-              "wikidata": "Q2868524",
-              "wikipedia": "tr:Çubuk, Ankara"
-            }
-          }
-        ]
+        "university": true,
+        "safety": "low",
+        "average_age": 30
       },
       "geometry": {
         "type": "Point",
@@ -121024,27 +120383,9 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/958005608",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1812354,
-            "reltags": {
-              "admin_level": "6",
-              "boundary": "administrative",
-              "name": "Etimesgut",
-              "name:tr": "Etimesgut",
-              "name:tr:suffix": "İlçesi",
-              "network": "TR06-districts",
-              "population": "617229",
-              "population:date": "2024-01-01",
-              "source:population": "TUİK",
-              "type": "boundary",
-              "wikidata": "Q1029159",
-              "wikipedia": "tr:Etimesgut"
-            }
-          }
-        ]
+        "university": false,
+        "safety": "medium",
+        "average_age": 43
       },
       "geometry": {
         "type": "Point",
@@ -121058,35 +120399,9 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/958017625",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1713914,
-            "reltags": {
-              "admin_level": "6",
-              "boundary": "administrative",
-              "name": "Evren",
-              "name:ce": "Эврен",
-              "name:de": "Evren",
-              "name:en": "Evren",
-              "name:fa": "اورن",
-              "name:ru": "Эврен",
-              "name:tr": "Evren",
-              "name:tr:suffix": "İlçesi",
-              "name:tt": "Эврен",
-              "name:ur": "عورین",
-              "network": "TR06-districts",
-              "old_name": "Çıkınağıl",
-              "population": "3581",
-              "population:date": "2024-01-01",
-              "source:population": "TUİK",
-              "type": "boundary",
-              "wikidata": "Q1027593",
-              "wikipedia": "tr:Evren, Ankara"
-            }
-          }
-        ]
+        "university": true,
+        "safety": "high",
+        "average_age": 60
       },
       "geometry": {
         "type": "Point",
@@ -121100,33 +120415,9 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/958020973",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1812355,
-            "reltags": {
-              "admin_level": "6",
-              "boundary": "administrative",
-              "name": "Kahramankazan",
-              "name:ce": "КахӀраманказан",
-              "name:fa": "کازان",
-              "name:ja": "カフラマンカザン",
-              "name:tr": "Kahramankazan",
-              "name:tr:suffix": "İlçesi",
-              "name:ur": "کازان",
-              "name:zh": "卡拉曼卡贊",
-              "network": "TR06-districts",
-              "old_name": "Kazan",
-              "population": "60804",
-              "population:date": "2024-01-01",
-              "source:population": "TUİK",
-              "type": "boundary",
-              "wikidata": "Q2318164",
-              "wikipedia": "tr:Kahramankazan"
-            }
-          }
-        ]
+        "university": true,
+        "safety": "medium",
+        "average_age": 37
       },
       "geometry": {
         "type": "Point",
@@ -121140,34 +120431,9 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/958022183",
-        "@relations": [
-          {
-            "role": "label",
-            "rel": 1811393,
-            "reltags": {
-              "admin_level": "6",
-              "boundary": "administrative",
-              "name": "Keçiören",
-              "name:az": "Keçiörən",
-              "name:ce": "Кечиоьрен",
-              "name:fa": "کچی‌اورن",
-              "name:ko": "케치외렌",
-              "name:tr": "Keçiören",
-              "name:tr:suffix": "İlçesi",
-              "name:tt": "Кечиорен",
-              "name:ur": "کیچیورین",
-              "name:zh": "凱其歐倫市",
-              "network": "TR06-districts",
-              "population": "923404",
-              "population:date": "2024-01-01",
-              "source:population": "TUİK",
-              "type": "boundary",
-              "wikidata": "Q1021220",
-              "wikipedia": "tr:Keçiören"
-            }
-          }
-        ]
+        "university": true,
+        "safety": "medium",
+        "average_age": 37
       },
       "geometry": {
         "type": "Point",
@@ -121181,29 +120447,9 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/958023242",
-        "@relations": [
-          {
-            "role": "label",
-            "rel": 1812319,
-            "reltags": {
-              "admin_level": "6",
-              "boundary": "administrative",
-              "name": "Mamak",
-              "name:de": "Mamak",
-              "name:en": "Mamak",
-              "name:tr": "Mamak",
-              "name:tr:suffix": "İlçesi",
-              "network": "TR06-districts",
-              "population": "682279",
-              "population:date": "2024-01-01",
-              "source:population": "TUİK",
-              "type": "boundary",
-              "wikidata": "Q2055274",
-              "wikipedia": "tr:Mamak"
-            }
-          }
-        ]
+        "university": false,
+        "safety": "high",
+        "average_age": 59
       },
       "geometry": {
         "type": "Point",
@@ -121217,33 +120463,9 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/958038129",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1812317,
-            "reltags": {
-              "admin_level": "6",
-              "boundary": "administrative",
-              "name": "Altındağ",
-              "name:ar": "ألتنداغ",
-              "name:ce": "АлтиндагӀ",
-              "name:fa": "آلتینداغ",
-              "name:tr": "Altındağ",
-              "name:tr:suffix": "İlçesi",
-              "name:tt": "Алтындаг",
-              "name:ur": "التینداغ",
-              "name:zh": "阿爾滕達",
-              "network": "TR06-districts",
-              "population": "412267",
-              "population:date": "2024-01-01",
-              "source:population": "TUİK",
-              "type": "boundary",
-              "wikidata": "Q682981",
-              "wikipedia": "tr:Altındağ"
-            }
-          }
-        ]
+        "university": false,
+        "safety": "medium",
+        "average_age": 42
       },
       "geometry": {
         "type": "Point",
@@ -121257,27 +120479,9 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/958038131",
-        "@relations": [
-          {
-            "role": "label",
-            "rel": 1812321,
-            "reltags": {
-              "admin_level": "6",
-              "boundary": "administrative",
-              "name": "Çankaya",
-              "name:tr": "Çankaya",
-              "name:tr:suffix": "İlçesi",
-              "network": "TR06-districts",
-              "population": "937546",
-              "population:date": "2024-01-01",
-              "source:population": "TUİK",
-              "type": "boundary",
-              "wikidata": "Q1020646",
-              "wikipedia": "en:Çankaya, Ankara (district)"
-            }
-          }
-        ]
+        "university": false,
+        "safety": "low",
+        "average_age": 27
       },
       "geometry": {
         "type": "Point",
@@ -121291,29 +120495,9 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2352111108",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1811046,
-            "reltags": {
-              "admin_level": "6",
-              "boundary": "administrative",
-              "name": "Sincan",
-              "name:de": "Sincan",
-              "name:en": "Sincan",
-              "name:tr": "Sincan",
-              "name:tr:suffix": "İlçesi",
-              "network": "TR06-districts",
-              "population": "571889",
-              "population:date": "2024-01-01",
-              "source:population": "TUİK",
-              "type": "boundary",
-              "wikidata": "Q1020659",
-              "wikipedia": "tr:Sincan"
-            }
-          }
-        ]
+        "university": true,
+        "safety": "high",
+        "average_age": 64
       },
       "geometry": {
         "type": "Point",
@@ -121327,38 +120511,9 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/3091128788",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1799855,
-            "reltags": {
-              "admin_level": "6",
-              "boundary": "administrative",
-              "name": "Polatlı",
-              "name:ar": "بولادلي",
-              "name:ce": "Полатли",
-              "name:de": "Polatlı",
-              "name:el": "Πόλατλι",
-              "name:en": "Polatlı",
-              "name:fa": "پولاتلی",
-              "name:ku": "Polatlî",
-              "name:sr": "Полатли",
-              "name:tr": "Polatlı",
-              "name:tr:suffix": "İlçesi",
-              "name:tt": "Полатлы",
-              "name:ur": "پولاتلی",
-              "name:zh": "波拉特勒",
-              "network": "TR06-districts",
-              "population": "128895",
-              "population:date": "2024-01-01",
-              "source:population": "TUİK",
-              "type": "boundary",
-              "wikidata": "Q945388",
-              "wikipedia": "tr:Polatlı"
-            }
-          }
-        ]
+        "university": false,
+        "safety": "high",
+        "average_age": 54
       },
       "geometry": {
         "type": "Point",

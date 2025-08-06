@@ -9,10 +9,13 @@ export function getNumericColorScale(data: ThematicData[], palette?: string[]) {
 
     const min = Math.min(...numericValues);
     const max = Math.max(...numericValues);
+    const mid = (min + max) / 2;
+
+    const baseColor = (palette && palette[0]) || "#6a51a3";
 
     const scale = chroma
-        .scale(palette || ["#f2f0f7", "#6a51a3"])
-        .domain([min, max]);
+        .scale(["#f2f0f7", "#cccccc", baseColor]) // kontrollü geçiş
+        .domain([min, mid, max]);
 
     return (value: number | string): string => {
         const num = Number(value);
@@ -20,13 +23,14 @@ export function getNumericColorScale(data: ThematicData[], palette?: string[]) {
     };
 }
 
+
 // Kategorik veriler(sayısal olmayan veriler) için renk haritası oluşturur
 export function getCategoricalColorScale(data: ThematicData[], palette?: string[]) {
     const uniqueCategories = Array.from(
         new Set(data.map((item) => String(item.value)))
     );
 
-    const colors = palette || chroma.scale("Set3").colors(uniqueCategories.length);
+    const colors = palette || chroma.scale("Set3").colors(uniqueCategories.length);                 // chroma set3 paletini aldım ama kategori sayısı fazla olursa renkler birbirine benzeyebilirmiş, ilerde değiştir
 
     const categoryColorMap: Record<string, string> = {};
     uniqueCategories.forEach((cat, i) => {
@@ -39,7 +43,7 @@ export function getCategoricalColorScale(data: ThematicData[], palette?: string[
     };
 }
 
-// Genel renk sağlayıcı: stratejiye göre uygun fonksiyonu döner
+// Genel renk sağlayıcı: uygun fonksiyonu döner
 export function getColorFunction(
     strategy: ColorStrategy,
     data: ThematicData[],
@@ -66,7 +70,7 @@ function hexToRgb(hex: string): { r: number; g: number; b: number } {
 export function interpolateColor(hex: string, ratio: number): string {
     const rgb = hexToRgb(hex);
     // ratio: 0 (min) açık renk, 1 (max) koyu renk olsun
-    const darknessFactor = 0.3; // %30 koyuluk örneği
+    const darknessFactor = 0.8; // %60 koyuluk örneği
 
     const r = Math.round(rgb.r * (1 - darknessFactor * ratio));
     const g = Math.round(rgb.g * (1 - darknessFactor * ratio));
@@ -75,35 +79,32 @@ export function interpolateColor(hex: string, ratio: number): string {
     return `rgb(${r}, ${g}, ${b})`;
 }
 
-// 5 parçaya bölünmüş legend item oluşturur
+
+// Yeni legend item üretici
 export function generateLegendItems(
     min: number,
     max: number,
     baseColor: string,
-    opacity: number = 1
+    opacity: number = 1,
+    steps: number = 5
 ): { label: string; color: string }[] {
     const items = [];
-    const steps = 5;
     const range = max - min;
     const stepSize = range / steps;
+
+    const colorScale = chroma
+        .scale(["#f2f0f7", baseColor])
+        .mode("lab")
+        .colors(steps);
+
 
     for (let i = 0; i < steps; i++) {
         const start = min + i * stepSize;
         const end = min + (i + 1) * stepSize;
-        const ratio = (i + 0.5) / steps;
-
-        // Renk hesapla (örneğin koyuluk için interpolateColor)
-        const rgbColor = interpolateColor(baseColor, ratio);
-
-        // rgb stringini rgba yap (opacity ile)
-        const color = rgbColor.replace(
-            /^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/,
-            (_match, r, g, b) => `rgba(${r}, ${g}, ${b}, ${opacity})`
-        );
 
         items.push({
             label: `${start.toFixed(0)} - ${end.toFixed(0)}`,
-            color,
+            color: chroma(colorScale[i]).alpha(opacity).css(),
         });
     }
 

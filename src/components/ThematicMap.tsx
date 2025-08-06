@@ -1,60 +1,42 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import Map from "ol/Map";
 import View from "ol/View";
 import { FeatureCollection, GeoJsonProperties, Geometry } from "geojson";
 import { fromLonLat } from "ol/proj";
 import baseLayer from "../layers/baseLayer";
 import { createThematicLayer } from "../layers/thematicLayer";
-import ThematicMenu from "./ThematicMenu";
-import { generateLegendItems, interpolateColor } from "../utils/colorScale";
+import { generateLegendItems } from "../utils/colorScale";
+import chroma from "chroma-js";
 
 interface ThematicMapProps {
-    rawMapData: any;
+    rawMapData: FeatureCollection<Geometry, GeoJsonProperties>;
     mapParser: (input: any) => FeatureCollection<Geometry, GeoJsonProperties>;
-    dataValueProperty?: string;
-    initialOpacity?: number; // 0 - 1 arası
-    initialBaseColor?: string;
-    opacity?: number;  // isteğe bağlı, 0-1 arası
+    dataValueProperty: string;
+    opacity?: number;
     baseColor?: string;
+    setLegendItems?: (items: { label: string; color: string }[]) => void;
+    legendStepCount: number;
 }
 
 const ThematicMap: React.FC<ThematicMapProps> = ({
     rawMapData,
     mapParser,
-    dataValueProperty = "",
-    initialOpacity = 1,
-    initialBaseColor = "#6495ED",
+    dataValueProperty,
+    opacity = 1,
+    baseColor = "#fdfb6fff",
+    setLegendItems,
+    legendStepCount,
 }) => {
     const mapRef = useRef<HTMLDivElement | null>(null);
     const mapInstance = useRef<Map | null>(null);
     const thematicLayerRef = useRef<any>(null);
 
-    const [selectedProperty, setSelectedProperty] = useState(dataValueProperty);
-    const [availableProperties, setAvailableProperties] = useState<string[]>([]);
-
-    // State olarak baseColor ve opacity tutuyoruz
-    const [baseColor, setBaseColor] = useState(initialBaseColor);
-    const [opacity, setOpacity] = useState(initialOpacity);
-
-    const [legendItems, setLegendItems] = useState<{ label: string; color: string }[]>([]);
-
     useEffect(() => {
-        if (!rawMapData?.features?.length) return;
-
-        const keys = Object.keys(rawMapData.features[0].properties || {});
-        setAvailableProperties(keys);
-
-        if (!selectedProperty && keys.length > 0) {
-            setSelectedProperty(keys[0]);
-        }
-    }, [rawMapData]);
-
-    useEffect(() => {
-        if (!mapRef.current || !selectedProperty) return;
+        if (!rawMapData?.features?.length || !dataValueProperty) return;
 
         if (!mapInstance.current) {
             mapInstance.current = new Map({
-                target: mapRef.current,
+                target: mapRef.current!,
                 layers: [baseLayer],
                 view: new View({
                     center: fromLonLat([32.85, 39.93]),
@@ -64,75 +46,90 @@ const ThematicMap: React.FC<ThematicMapProps> = ({
         }
 
         const featureCollection = mapParser(rawMapData);
+        const rawValues = featureCollection.features.map((f) => f.properties?.[dataValueProperty]);
 
-        if (!featureCollection || !Array.isArray(featureCollection.features)) {
-            console.error("Geçersiz FeatureCollection:", featureCollection);
+        // === NUMERIC ===
+        const numericValues = rawValues.map((v) => Number(v)).filter((v) => !isNaN(v));
+        if (numericValues.length > 0) {
+            const min = Math.min(...numericValues);
+            const max = Math.max(...numericValues);
+
+            const legend = generateLegendItems(min, max, baseColor, opacity, legendStepCount);
+            setLegendItems?.(legend);
+
+            const getColor = (val: number) => {
+                if (isNaN(val)) return "#ccc";
+                for (const item of legend) {
+                    const [startStr, endStr] = item.label.split(" - ");
+                    const start = parseFloat(startStr);
+                    const end = parseFloat(endStr);
+                    if (val >= start && val <= end) return item.color;
+                }
+                return "#ccc";
+            };
+
+            if (thematicLayerRef.current) {
+                mapInstance.current.removeLayer(thematicLayerRef.current);
+            }
+
+            thematicLayerRef.current = createThematicLayer({
+                featureCollection,
+                dataValueProperty,
+                getColor,
+                opacity,
+            });
+
+            mapInstance.current.addLayer(thematicLayerRef.current);
             return;
         }
 
-        const values = featureCollection.features
-            .map((feature) => {
-                const val = feature.properties?.[selectedProperty];
-                return val !== undefined && val !== null ? Number(val) : NaN;
-            })
-            .filter((v) => !isNaN(v));
+        // === CATEGORICAL ===
+        const processedValues = rawValues.map((val) => {
+            return val === null || val === undefined || val === "" ? "empty" : String(val);
+        });
+        const uniqueCategories = Array.from(new Set(processedValues));
 
-        if (values.length === 0) {
-            console.warn("Seçilen özellik için sayısal veri bulunamadı.");
-            setLegendItems([]);
-            return;
-        }
+        const colorScale = chroma.scale("Set3").colors(uniqueCategories.length);
+        const categoryColorMap: Record<string, string> = {};
+        uniqueCategories.forEach((cat, i) => {
+            categoryColorMap[cat] = chroma(colorScale[i]).alpha(opacity).css();
+        });
 
-        const min = Math.min(...values);
-        const max = Math.max(...values);
-
-        // Legend renklerini baseColor ve range kullanarak üret
-        const legend = generateLegendItems(min, max, baseColor, opacity);
-        setLegendItems(legend);
-
-        // Tematik renk fonksiyonu - burada baseColor ile koyuluk hesaplanıyor
-        const getColor = (val: number) => {
-            if (isNaN(val)) return "#ccc";
-
-            // 0-1 arası normalize değer
-            const ratio = (val - min) / (max - min || 1);
-
-            // Yüksek değer koyu renk: interpolateColor fonksiyonu kullanılıyor (ters ratio)
-            return interpolateColor(baseColor, ratio);
+        const getColor = (val: any) => {
+            const key = val === null || val === undefined || val === "" ? "empty" : String(val);
+            return categoryColorMap[key] || "#ccc";
         };
 
-        // Önce varsa katmanı kaldır
+        const legend = uniqueCategories.map((cat) => ({
+            label: cat === "empty" ? "Veri Yok" : cat,
+            color: categoryColorMap[cat],
+        }));
+
+        setLegendItems?.(legend);
+
         if (thematicLayerRef.current) {
             mapInstance.current.removeLayer(thematicLayerRef.current);
-            thematicLayerRef.current = null;
         }
 
-        // Tematik katman oluştur
         thematicLayerRef.current = createThematicLayer({
             featureCollection,
-            dataValueProperty: selectedProperty,
+            dataValueProperty,
             getColor,
             opacity,
         });
 
         mapInstance.current.addLayer(thematicLayerRef.current);
-    }, [rawMapData, selectedProperty, baseColor, opacity, mapParser]);
+    }, [
+        rawMapData,
+        dataValueProperty,
+        baseColor,
+        opacity,
+        mapParser,
+        setLegendItems,
+        legendStepCount,
+    ]);
 
-    return (
-        <>
-            <ThematicMenu
-                properties={availableProperties}
-                selectedProperty={selectedProperty}
-                onPropertyChange={setSelectedProperty}
-                baseColor={baseColor}
-                onBaseColorChange={setBaseColor}
-                opacity={Math.round(opacity * 100)}
-                onOpacityChange={(val) => setOpacity(val / 100)}
-                legendItems={legendItems}
-            />
-            <div ref={mapRef} style={{ width: "100%", height: "100vh" }} />
-        </>
-    );
+    return <div ref={mapRef} style={{ width: "100%", height: "100vh" }} />;
 };
 
 export default ThematicMap;

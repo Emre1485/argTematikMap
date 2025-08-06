@@ -13,6 +13,10 @@ interface ThematicMenuProps {
     onOpacityChange: (opacity: number) => void;
 
     legendItems: LegendItem[];
+
+    legendStepCount: number;
+    onLegendStepCountChange: (count: number) => void;
+
 }
 
 const ThematicMenu: React.FC<ThematicMenuProps> = ({
@@ -24,6 +28,9 @@ const ThematicMenu: React.FC<ThematicMenuProps> = ({
     opacity,
     onOpacityChange,
     legendItems,
+    legendStepCount,
+    onLegendStepCountChange
+
 }) => {
     return (
         <div
@@ -78,10 +85,28 @@ const ThematicMenu: React.FC<ThematicMenuProps> = ({
                     style={{ width: "100%" }}
                 />
             </label>
+            <label>
+                Aralık Sayısı:
+                <input
+                    type="number"
+                    min={1}
+                    max={1000}                                      // MAX ARALIK 1000
+                    value={legendStepCount}
+                    onChange={(e) => onLegendStepCountChange(Number(e.target.value))}
+                    style={{ width: "100%", marginTop: 4, marginBottom: 8 }}
+                />
+            </label>
 
-            <div style={{ marginTop: 16 }}>
+            <div
+                style={{
+                    marginTop: 16,
+                    maxHeight: legendItems.length > 10 ? 300 : "auto", // dinamik max yükseklik
+                    overflowY: legendItems.length > 10 ? "auto" : "visible", // sadece gerekirse scroll
+                }}
+            >
                 <Legend items={legendItems} title="Açıklama" />
             </div>
+
         </div>
     );
 };

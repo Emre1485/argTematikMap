@@ -30,3 +30,5 @@ export interface ThematicProps {
     colorStrategy?: ColorStrategy;               // Varsayılan: numeric
     colorPalette?: string[];                     // Renk paleti (isteğe bağlı)
 }
+
+

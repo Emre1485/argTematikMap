@@ -1,0 +1,246 @@
+{
+    "data": [
+        {
+            "il_adi": "Ankara",
+            "plaka_kodu": "06",
+            "alan_kodu": "312",
+            "nufus": "5.782.285",
+            "bolge": "İç Anadolu",
+            "yuzolcumu": "25.632",
+            "nufus_artisi": "6,1%",
+            "erkek_nufus_yuzde": "49,58%",
+            "erkek_nufus": "2.728.900",
+            "kadin_nufus_yuzde": "50,42%",
+            "kadin_nufus": "2.775.085",
+            "nufus_yuzdesi_genel": "6,71%",
+            "ilceler": [
+                {
+                    "plaka_kodu": "6",
+                    "ilce_kodu": "1872",
+                    "il_adi": "ANKARA",
+                    "ilce_adi": "AKYURT",
+                    "nufus": "38.588",
+                    "erkek_nufus": "19.711",
+                    "kadin_nufus": "18.877"
+                },
+                {
+                    "plaka_kodu": "6",
+                    "ilce_kodu": "1130",
+                    "il_adi": "ANKARA",
+                    "ilce_adi": "ALTINDAĞ",
+                    "nufus": "407.675",
+                    "erkek_nufus": "204.907",
+                    "kadin_nufus": "202.768"
+                },
+                {
+                    "plaka_kodu": "6",
+                    "ilce_kodu": "1157",
+                    "il_adi": "ANKARA",
+                    "ilce_adi": "AYAŞ",
+                    "nufus": "13.093",
+                    "erkek_nufus": "7.032",
+                    "kadin_nufus": "6.061"
+                },
+                {
+                    "plaka_kodu": "6",
+                    "ilce_kodu": "1167",
+                    "il_adi": "ANKARA",
+                    "ilce_adi": "BALA",
+                    "nufus": "22.966",
+                    "erkek_nufus": "12.602",
+                    "kadin_nufus": "10.364"
+                },
+                {
+                    "plaka_kodu": "6",
+                    "ilce_kodu": "1187",
+                    "il_adi": "ANKARA",
+                    "ilce_adi": "BEYPAZARI",
+                    "nufus": "48.393",
+                    "erkek_nufus": "24.119",
+                    "kadin_nufus": "24.274"
+                },
+                {
+                    "plaka_kodu": "6",
+                    "ilce_kodu": "1227",
+                    "il_adi": "ANKARA",
+                    "ilce_adi": "ÇAMLIDERE",
+                    "nufus": "8.350",
+                    "erkek_nufus": "4.421",
+                    "kadin_nufus": "3.929"
+                },
+                {
+                    "plaka_kodu": "6",
+                    "ilce_kodu": "1231",
+                    "il_adi": "ANKARA",
+                    "ilce_adi": "ÇANKAYA",
+                    "nufus": "949.265",
+                    "erkek_nufus": "454.974",
+                    "kadin_nufus": "494.291"
+                },
+                {
+                    "plaka_kodu": "6",
+                    "ilce_kodu": "1260",
+                    "il_adi": "ANKARA",
+                    "ilce_adi": "ÇUBUK",
+                    "nufus": "91.363",
+                    "erkek_nufus": "45.626",
+                    "kadin_nufus": "45.737"
+                },
+                {
+                    "plaka_kodu": "6",
+                    "ilce_kodu": "1302",
+                    "il_adi": "ANKARA",
+                    "ilce_adi": "ELMADAĞ",
+                    "nufus": "44.236",
+                    "erkek_nufus": "22.223",
+                    "kadin_nufus": "22.013"
+                },
+                {
+                    "plaka_kodu": "6",
+                    "ilce_kodu": "1922",
+                    "il_adi": "ANKARA",
+                    "ilce_adi": "ETİMESGUT",
+                    "nufus": "606.472",
+                    "erkek_nufus": "302.537",
+                    "kadin_nufus": "303.935"
+                },
+                {
+                    "plaka_kodu": "6",
+                    "ilce_kodu": "1924",
+                    "il_adi": "ANKARA",
+                    "ilce_adi": "EVREN",
+                    "nufus": "2.965",
+                    "erkek_nufus": "1.464",
+                    "kadin_nufus": "1.501"
+                },
+                {
+                    "plaka_kodu": "6",
+                    "ilce_kodu": "1744",
+                    "il_adi": "ANKARA",
+                    "ilce_adi": "GÖLBAŞI",
+                    "nufus": "142.961",
+                    "erkek_nufus": "71.505",
+                    "kadin_nufus": "71.456"
+                },
+                {
+                    "plaka_kodu": "6",
+                    "ilce_kodu": "1365",
+                    "il_adi": "ANKARA",
+                    "ilce_adi": "GÜDÜL",
+                    "nufus": "8.155",
+                    "erkek_nufus": "4.107",
+                    "kadin_nufus": "4.048"
+                },
+                {
+                    "plaka_kodu": "6",
+                    "ilce_kodu": "1387",
+                    "il_adi": "ANKARA",
+                    "ilce_adi": "HAYMANA",
+                    "nufus": "27.298",
+                    "erkek_nufus": "14.228",
+                    "kadin_nufus": "13.070"
+                },
+                {
+                    "plaka_kodu": "6",
+                    "ilce_kodu": "1815",
+                    "il_adi": "ANKARA",
+                    "ilce_adi": "KAHRAMANKAZAN",
+                    "nufus": "57.913",
+                    "erkek_nufus": "29.658",
+                    "kadin_nufus": "28.255"
+                },
+                {
+                    "plaka_kodu": "6",
+                    "ilce_kodu": "1427",
+                    "il_adi": "ANKARA",
+                    "ilce_adi": "KALECİK",
+                    "nufus": "12.502",
+                    "erkek_nufus": "6.455",
+                    "kadin_nufus": "6.047"
+                },
+                {
+                    "plaka_kodu": "6",
+                    "ilce_kodu": "1745",
+                    "il_adi": "ANKARA",
+                    "ilce_adi": "KEÇİÖREN",
+                    "nufus": "942.884",
+                    "erkek_nufus": "461.863",
+                    "kadin_nufus": "481.021"
+                },
+                {
+                    "plaka_kodu": "6",
+                    "ilce_kodu": "1473",
+                    "il_adi": "ANKARA",
+                    "ilce_adi": "KIZILCAHAMAM",
+                    "nufus": "26.968",
+                    "erkek_nufus": "13.745",
+                    "kadin_nufus": "13.223"
+                },
+                {
+                    "plaka_kodu": "6",
+                    "ilce_kodu": "1746",
+                    "il_adi": "ANKARA",
+                    "ilce_adi": "MAMAK",
+                    "nufus": "682.420",
+                    "erkek_nufus": "340.018",
+                    "kadin_nufus": "342.402"
+                },
+                {
+                    "plaka_kodu": "6",
+                    "ilce_kodu": "1539",
+                    "il_adi": "ANKARA",
+                    "ilce_adi": "NALLIHAN",
+                    "nufus": "26.961",
+                    "erkek_nufus": "13.422",
+                    "kadin_nufus": "13.539"
+                },
+                {
+                    "plaka_kodu": "6",
+                    "ilce_kodu": "1578",
+                    "il_adi": "ANKARA",
+                    "ilce_adi": "POLATLI",
+                    "nufus": "127.526",
+                    "erkek_nufus": "63.738",
+                    "kadin_nufus": "63.788"
+                },
+                {
+                    "plaka_kodu": "6",
+                    "ilce_kodu": "2034",
+                    "il_adi": "ANKARA",
+                    "ilce_adi": "PURSAKLAR",
+                    "nufus": "159.676",
+                    "erkek_nufus": "79.639",
+                    "kadin_nufus": "80.037"
+                },
+                {
+                    "plaka_kodu": "6",
+                    "ilce_kodu": "1747",
+                    "il_adi": "ANKARA",
+                    "ilce_adi": "SİNCAN",
+                    "nufus": "561.411",
+                    "erkek_nufus": "286.283",
+                    "kadin_nufus": "275.128"
+                },
+                {
+                    "plaka_kodu": "6",
+                    "ilce_kodu": "1658",
+                    "il_adi": "ANKARA",
+                    "ilce_adi": "ŞEREFLİKOÇHİSAR",
+                    "nufus": "33.475",
+                    "erkek_nufus": "16.799",
+                    "kadin_nufus": "16.676"
+                },
+                {
+                    "plaka_kodu": "6",
+                    "ilce_kodu": "1723",
+                    "il_adi": "ANKARA",
+                    "ilce_adi": "YENİMAHALLE",
+                    "nufus": "703.809",
+                    "erkek_nufus": "342.333",
+                    "kadin_nufus": "361.476"
+                }
+            ],
+            "kisa_bilgi": "Bolu, Çankırı, Kırıkkale, Kırşehir, Aksaray, Konya ve Eskişehir illeri ile çevrili ve Türkiye'nin başkenti Ankara, Cumhuriyetin kuruluşundan bu yana hızla gelişme göstermiştir. Şehrin amblemi, Hitit uygarlığının da simgesi olan Hitit Güneş Kursu'dur."
+        }
+    ]
+}
